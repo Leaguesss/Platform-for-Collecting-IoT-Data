@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ScrollView>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Sensor Name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Measures the acceleration forces acting on the mobile in order to obtain the object's position in space and monitor the object's movement "
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Gyroscope"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Mainly used for rotation detection, a gyro measures the rate of rotation around each of the device’s axes"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Magnetic Field"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Mainly used for creating a compass, this sensor measures the geomagnetic field in three axes"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Orientation"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Useful for determining device position, this sensor will measure the degrees of rotation that a device makes around all three physical axes. "
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="This sensor measures the ambient room temperature "
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Proximity"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="This sensor measures the proximity of an object relative to the view of a screen of a device. It is used for determining whether a handset is being held up to a person’s ear"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Light"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="A measure of the ambient light level, commonly used to control screen brightness "
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Pressure"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Measures ambient air pressure, useful for monitoring air pressure changes"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Humidity"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Measures relative ambient humidity. "
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Game Rotation Vector"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="The game rotation vector sensor is identical to the Rotation vector sensor, except it does not use the geomagnetic field"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Gravity"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Measures, on three axes, the force of gravity applied to a device"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Linear Acceleration"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Measures the acceleration force applied to the three axes excluding the force due to gravity. "
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Rotation Vector"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:text="Measures the orientation of a device by providing the three elements of the device's rotation vector."
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</TableLayout>

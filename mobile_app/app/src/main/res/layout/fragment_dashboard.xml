@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dashboard"
+    tools:context="comp3888.group5.sensordatacollector.ui.dashboard.DashboardFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingStart="27dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_dashboard_renew"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_span="2"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/total_record_tv"
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#404b69"
+                    android:text="Number of Record on hold: " />
+
+                <Button
+                    android:id="@+id/upload_btn"
+                    android:layout_marginLeft="36dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_autorenew_24" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_marginLeft="36dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:indeterminate="false"
+                    android:visibility="gone"
+                    android:indeterminateDrawable="@drawable/ic_dashboard_upload" />
+
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:paddingStart="25dp"
+            android:paddingEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/reward_block"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/ic_dashboard_reward"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_span="2"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/reward"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="fill_horizontal"
+                    android:text="@string/reward_points"
+                    android:textColor="#fff"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <ScrollView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="2">
+                        <TextView
+                            android:id="@+id/sensor_reward_unit"
+                            android:layout_width="160dp"
+                            android:padding="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:gravity="fill_horizontal"
+                            android:textSize="12sp"
+                            android:textColor="#fff"/>
+                    </ScrollView>
+
+                    <TextView
+                        android:id="@+id/reward_mark"
+                        android:layout_width="0dp"
+                        android:layout_height="105dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/ic_dashboard_reward_mark"
+                        android:text="94"
+                        android:textSize="70dp"
+                        android:textColor="#283c63"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--            <Button-->
+            <!--                android:layout_width="160dp"-->
+            <!--                android:layout_height="160dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:layout_marginBottom="10dp"-->
+            <!--                android:text="add block" />-->
+        </TableRow>
+
+        <TableRow
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp">
+
+            <LinearLayout
+                android:id="@+id/study"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/ic_dashboard_reward"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/research_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#fff"
+                    android:gravity="fill_horizontal"
+                    android:text="Researches:" />
+
+                <TextView
+                    android:id="@+id/research_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="fill_horizontal"
+                    android:text="Total number of participants:"
+                    android:textSize="10dp"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/research_total_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:text="14"
+                    android:textSize="20dp"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/research_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="fill_horizontal"
+                    android:text="Total number of participants in progress: "
+                    android:textSize="10dp"
+                    android:textColor="#fff"/>
+                <TextView
+                android:id="@+id/research_current_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/study_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="3"
+                    android:textSize="20dp"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/active_sensor"
+                android:background="@drawable/ic_dashboard_reward"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/sensor_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="fill_horizontal"
+                    android:text="@string/active_sensors"
+                    android:textColor="#fff"/>
+
+                <ScrollView
+                    android:id="@+id/sensor_scroll"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/sensor"
+                            android:gravity="fill_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="5"
+                            android:padding="2dp"
+                            android:textSize="12sp"
+                            android:textColor="#fff"/>
+
+                        <!--                    <Button-->
+                        <!--                        android:id="@+id/setting_edit_btn"-->
+                        <!--                        android:layout_width="100dp"-->
+                        <!--                        android:layout_height="30dp"-->
+                        <!--                        android:background="@android:color/transparent"-->
+                        <!--                        android:textSize="12dp"-->
+                        <!--                        android:text="edit sensor"-->
+                        <!--                        android:layout_gravity="bottom|center"/>-->
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_marginStart="106dp"-->
+    <!--        android:layout_marginTop="548dp"-->
+    <!--        android:text="test\nsdf\nbdsf"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"/>-->
+    <!--        <TextView-->
+    <!--            android:text="Current Marks: 94"/>-->
+    <!--    </Button>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

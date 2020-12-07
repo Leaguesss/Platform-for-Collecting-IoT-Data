@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context="comp3888.group5.sensordatacollector.ui.profile.ProfileFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#769fcd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/ic_dashboard_research"
+            android:contentDescription="Prifile Picture"
+            android:src="@drawable/ic_baseline_account_box_24"
+            app:srcCompat="@drawable/ic_baseline_account_box_24" />
+
+        <TextView
+            android:id="@+id/profileDescriptionTextView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="fill_horizontal"
+            android:text=""
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="308dp"
+        android:layout_height="331dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <TextView
+            android:id="@+id/ageText"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+        <TextView
+            android:id="@+id/occupationText"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_dashboard_research"
+            android:text="Edit"
+            android:textColor="@color/colorLightBtnText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="367dp" />
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="298dp"
+        android:layout_height="365dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:hint="2-12 length name"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:hint="YYYY"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:hint="Your weight"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+        <EditText
+            android:id="@+id/occupation"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:hint="Your occupation"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/resetPasswordBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_dashboard_research"
+        android:text="@string/resetPasswordText"
+        android:textColor="@color/colorLightBtnText"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_dashboard_research"
+        android:text="@string/logoutBtnText"
+        android:textColor="@color/colorLightBtnText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/namecolumn"
+        android:layout_width="405dp"
+        android:layout_height="253dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/username_title"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:text="Username: "
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/age_title"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:text="Year of birth: "
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/weight_title"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="end"
+            android:text="Weight: "
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/occupation_title"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="end"
+            android:text="Occupation: "
+            android:textSize="17sp" />
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_dashboard_research"
+            android:text="@string/cancel"
+            android:textColor="@color/colorLightBtnText"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="367dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#404b69</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorBg">#d6e6f2</color>
+    <color name="colorProfileBg">#07689f</color>
+    <color name="colorEditBtn">#07689f</color>
+    <color name="colorLightBtnText">#f7fbfc</color>
+    <color name="colorResetPasswordBtn">#e84a5f</color>
+    <color name="colorLogoutBtn">#616161</color>
+</resources>

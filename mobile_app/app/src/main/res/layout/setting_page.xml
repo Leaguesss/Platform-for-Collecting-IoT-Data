@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    tools:context="comp3888.group5.sensordatacollector.ui.settings.SettingsFragment">
+
+    <LinearLayout
+        android:id="@+id/setting_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <Button
+            android:id="@+id/infobutton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sensorConfigButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensor Configuration" />
+
+    <Button
+        android:id="@+id/syncSettingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync Settings" />
+
+    <Button
+        android:id="@+id/autoManualButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Automatic/Manual" />
+
+    <Button
+        android:id="@+id/fingerprintButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fingerprint ON/OFF" />
+
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password" />
+
+
+</LinearLayout>
