@@ -1,0 +1,1 @@
+# Platform-for-Collecting-IoT-Data
